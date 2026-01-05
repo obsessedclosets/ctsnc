@@ -25,8 +25,8 @@ export function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 text-balance leading-relaxed">
-            Expert cabinet refinishing, countertop & bathtub resurfacing for Raleigh, Durham, Chapel Hill, and Cary.
-            Save thousands with professional results in days, not weeks.
+            Expert cabinet refinishing, countertop & bathtub resurfacing for Raleigh, Durham, Chapel Hill, and Cary. Our
+            team of experts are committed to ensuring your satisfaction with every project.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
