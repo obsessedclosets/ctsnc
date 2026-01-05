@@ -29,20 +29,43 @@ export function Contact() {
     setIsSubmitting(true)
     setSubmitStatus("idle")
 
+    const webhookUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_WEBHOOK_URL
+
+    console.log("[v0] Webhook URL:", webhookUrl ? "Found" : "Missing")
+
+    if (!webhookUrl) {
+      console.error("[v0] Google Sheets webhook URL not configured")
+      setSubmitStatus("error")
+      setIsSubmitting(false)
+      return
+    }
+
     try {
-      const response = await fetch(process.env.NEXT_PUBLIC_GOOGLE_SHEETS_URL || "", {
+      // Combine first and last name for the sheet
+      const fullName = `${formData.firstName} ${formData.lastName}`.trim()
+
+      const payload = {
+        name: fullName,
+        email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        address: formData.address,
+        timeline: formData.timeline,
+        message: formData.message,
+      }
+
+      console.log("[v0] Submitting to Google Sheets:", payload)
+
+      const response = await fetch(webhookUrl, {
         method: "POST",
-        mode: "no-cors", // Google Apps Script requires this
+        mode: "no-cors",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-        }),
+        body: JSON.stringify(payload),
       })
 
-      // With no-cors mode, we assume success if no error is thrown
+      console.log("[v0] Form submission completed")
       setSubmitStatus("success")
       setFormData({
         firstName: "",
@@ -55,7 +78,7 @@ export function Contact() {
         message: "",
       })
     } catch (error) {
-      console.error("Form submission error:", error)
+      console.error("[v0] Form submission error:", error)
       setSubmitStatus("error")
     } finally {
       setIsSubmitting(false)
