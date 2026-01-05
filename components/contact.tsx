@@ -21,11 +21,45 @@ export function Contact() {
     timeline: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
-    // Handle form submission
+    setIsSubmitting(true)
+    setSubmitStatus("idle")
+
+    try {
+      const response = await fetch(process.env.NEXT_PUBLIC_GOOGLE_SHEETS_URL || "", {
+        method: "POST",
+        mode: "no-cors", // Google Apps Script requires this
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(),
+        }),
+      })
+
+      // With no-cors mode, we assume success if no error is thrown
+      setSubmitStatus("success")
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        address: "",
+        service: "",
+        timeline: "",
+        message: "",
+      })
+    } catch (error) {
+      console.error("Form submission error:", error)
+      setSubmitStatus("error")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -61,6 +95,16 @@ export function Contact() {
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {submitStatus === "success" && (
+                    <div className="p-4 bg-green-50 border border-green-200 rounded-md text-green-800">
+                      Thank you! Your request has been submitted. We'll contact you within 24 hours.
+                    </div>
+                  )}
+                  {submitStatus === "error" && (
+                    <div className="p-4 bg-red-50 border border-red-200 rounded-md text-red-800">
+                      There was an error submitting your request. Please call us at (919) 878-5800.
+                    </div>
+                  )}
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <Input
@@ -157,8 +201,8 @@ export function Contact() {
                       required
                     />
                   </div>
-                  <Button type="submit" size="lg" className="w-full">
-                    Submit Request
+                  <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                    {isSubmitting ? "Submitting..." : "Submit Request"}
                   </Button>
                 </form>
               </CardContent>
