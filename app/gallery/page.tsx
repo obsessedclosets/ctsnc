@@ -14,6 +14,146 @@ const categories = ["All", "Cabinets", "Countertops", "Bathtubs"]
 
 const galleryImages = [
   {
+    src: "/gallery/1-web-or-mls-101-aynor-cir.jpg",
+    alt: "Cabinet Refinishing - 101 Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/2-web-or-mls-101-aynor-cir.jpg",
+    alt: "Kitchen Cabinet Transformation - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/3-web-or-mls-101-aynor-cir.jpg",
+    alt: "Cabinet Detail Work - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/4-web-or-mls-101-aynor-cir.jpg",
+    alt: "Refinished Kitchen Cabinets - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/5-web-or-mls-101-aynor-cir.jpg",
+    alt: "Modern Cabinet Finish - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/6-web-or-mls-101-aynor-cir.jpg",
+    alt: "Kitchen Cabinet Renovation - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/7-web-or-mls-101-aynor-cir.jpg",
+    alt: "Cabinet Refinishing Project - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/8-web-or-mls-101-aynor-cir.jpg",
+    alt: "Professional Cabinet Refinish - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/9-web-or-mls-101-aynor-cir.jpg",
+    alt: "Kitchen Update - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/10-web-or-mls-101-aynor-cir.jpg",
+    alt: "Cabinet Transformation - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/11-web-or-mls-101-aynor-cir.jpg",
+    alt: "Refinished Cabinetry - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/12-web-or-mls-101-aynor-cir.jpg",
+    alt: "Kitchen Cabinet Makeover - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/13-web-or-mls-101-aynor-cir.jpg",
+    alt: "Cabinet Refinishing Detail - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/14-web-or-mls-101-aynor-cir.jpg",
+    alt: "Modern Kitchen Cabinets - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/15-web-or-mls-101-aynor-cir.jpg",
+    alt: "Kitchen Cabinet Restoration - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/16-web-or-mls-101-aynor-cir.jpg",
+    alt: "Cabinet Refinish Work - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/17-web-or-mls-101-aynor-cir.jpg",
+    alt: "Kitchen Cabinet Project - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/18-web-or-mls-101-aynor-cir.jpg",
+    alt: "Professional Cabinet Work - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/19-web-or-mls-101-aynor-cir.jpg",
+    alt: "Cabinet Refinishing Excellence - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/20-web-or-mls-101-aynor-cir.jpg",
+    alt: "Kitchen Cabinet Upgrade - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/21-web-or-mls-101-aynor-cir.jpg",
+    alt: "Refinished Kitchen - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/22-web-or-mls-101-aynor-cir.jpg",
+    alt: "Cabinet Transformation Project - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/23-web-or-mls-101-aynor-cir.jpg",
+    alt: "Modern Cabinet Refinishing - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/24-web-or-mls-101-aynor-cir.jpg",
+    alt: "Kitchen Cabinet Refinish - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/25-web-or-mls-101-aynor-cir.jpg",
+    alt: "Cabinet Work Detail - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/26-web-or-mls-101-aynor-cir.jpg",
+    alt: "Professional Kitchen Refinish - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/27-web-or-mls-101-aynor-cir.jpg",
+    alt: "Cabinet Refinishing Complete - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
+    src: "/gallery/28-web-or-mls-101-aynor-cir.jpg",
+    alt: "Finished Cabinet Project - Aynor Circle",
+    category: "Cabinets",
+  },
+  {
     src: "/gallery/project-1.jpg",
     alt: "Kitchen Cabinet Refinishing Project",
     category: "Cabinets",

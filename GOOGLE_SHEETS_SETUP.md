@@ -23,7 +23,7 @@ Follow these steps to connect your contact form to Google Sheets:
 2. Delete any existing code
 3. Paste this code:
 
-```javascript
+\`\`\`javascript
 function doPost(e) {
   try {
     // Get the active spreadsheet
@@ -57,7 +57,7 @@ function doPost(e) {
     })).setMimeType(ContentService.MimeType.JSON);
   }
 }
-```
+\`\`\`
 
 4. Click the **Save** icon (💾) and name it "CTS Form Handler"
 
@@ -117,7 +117,7 @@ function doPost(e) {
 
 To receive email notifications when a form is submitted, add this to your Apps Script:
 
-```javascript
+\`\`\`javascript
 function doPost(e) {
   try {
     var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
@@ -159,6 +159,6 @@ function doPost(e) {
     })).setMimeType(ContentService.MimeType.JSON);
   }
 }
-```
+\`\`\`
 
 Replace `info@ctsnorthcarolina.com` with your actual email address.
