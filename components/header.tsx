@@ -11,32 +11,25 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-32 items-center justify-between py-6">
+      <div className="container flex h-48 items-center justify-between py-10">
         <Link href="/" className="flex items-center pl-4">
-          <Image
-            src="/cts-logo.jpg"
-            alt="CTS North Carolina"
-            width={240}
-            height={96}
-            className="h-24 w-auto"
-            priority
-          />
+          <Image src="/cts-logo.jpg" alt="CTS North Carolina" width={180} height={72} className="h-auto" priority />
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="/#services" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#services" className="text-base font-medium hover:text-primary transition-colors">
             Services
           </Link>
-          <Link href="/gallery" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/gallery" className="text-base font-medium hover:text-primary transition-colors">
             Gallery
           </Link>
-          <Link href="/#about" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#about" className="text-base font-medium hover:text-primary transition-colors">
             About
           </Link>
-          <Link href="/#testimonials" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#testimonials" className="text-base font-medium hover:text-primary transition-colors">
             Reviews
           </Link>
-          <Link href="/#contact" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#contact" className="text-base font-medium hover:text-primary transition-colors">
             Contact
           </Link>
         </nav>
@@ -44,46 +37,46 @@ export function Header() {
         <div className="hidden md:flex items-center gap-4">
           <a
             href="tel:9198785800"
-            className="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors"
+            className="flex items-center gap-2 text-base font-medium hover:text-primary transition-colors"
           >
-            <Phone className="h-4 w-4" />
+            <Phone className="h-5 w-5" />
             (919) 878-5800
           </a>
-          <Button asChild>
-            <Link href="#contact">Free Quote</Link>
+          <Button asChild size="lg">
+            <Link href="#contact">Free Consultation</Link>
           </Button>
         </div>
 
-        <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        <button className="md:hidden pr-4" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+          {isMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
         </button>
       </div>
 
       {isMenuOpen && (
         <div className="md:hidden border-t bg-background">
-          <nav className="container flex flex-col gap-4 py-4">
-            <Link href="/#services" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
+          <nav className="container flex flex-col gap-4 py-4 px-6">
+            <Link href="/#services" className="text-base font-medium" onClick={() => setIsMenuOpen(false)}>
               Services
             </Link>
-            <Link href="/gallery" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/gallery" className="text-base font-medium" onClick={() => setIsMenuOpen(false)}>
               Gallery
             </Link>
-            <Link href="/#about" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/#about" className="text-base font-medium" onClick={() => setIsMenuOpen(false)}>
               About
             </Link>
-            <Link href="/#testimonials" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/#testimonials" className="text-base font-medium" onClick={() => setIsMenuOpen(false)}>
               Reviews
             </Link>
-            <Link href="/#contact" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/#contact" className="text-base font-medium" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
-            <a href="tel:9198785800" className="flex items-center gap-2 text-sm font-medium">
-              <Phone className="h-4 w-4" />
+            <a href="tel:9198785800" className="flex items-center gap-2 text-base font-medium">
+              <Phone className="h-5 w-5" />
               (919) 878-5800
             </a>
-            <Button asChild className="w-full">
+            <Button asChild className="w-full" size="lg">
               <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
-                Free Quote
+                Free Consultation
               </Link>
             </Button>
           </nav>

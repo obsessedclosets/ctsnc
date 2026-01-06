@@ -6,27 +6,27 @@ import { BeforeAfterSlider } from "./before-after-slider"
 
 const projects = [
   {
-    before: "/old-dark-kitchen-cabinets-before.jpg",
-    after: "/bright-white-refinished-kitchen-cabinets-after.jpg",
+    before: "/outdated-kitchen-cabinets-before-refinishing.jpg",
+    after: "/modern-refinished-kitchen-cabinets-after.jpg",
     title: "Kitchen Cabinet Transformation",
     location: "Raleigh, NC",
   },
   {
-    before: "/dated-bathroom-countertop-before.jpg",
-    after: "/modern-bathroom-countertop-resurfaced-after.jpg",
-    title: "Bathroom Countertop Resurfacing",
+    before: "/worn-kitchen-island-before-restoration.jpg",
+    after: "/beautifully-restored-kitchen-island-after.jpg",
+    title: "Kitchen Island Refinishing",
     location: "Durham, NC",
   },
   {
-    before: "/worn-oak-cabinets-before.jpg",
-    after: "/modern-gray-cabinets-refinished-after.jpg",
-    title: "Modern Gray Cabinet Refinish",
+    before: "/old-countertops-before-resurfacing.jpg",
+    after: "/granite-countertops-after-resurfacing.jpg",
+    title: "Countertop Resurfacing",
     location: "Chapel Hill, NC",
   },
   {
-    before: "/old-bathtub-yellowed-before.jpg",
-    after: "/pristine-white-bathtub-resurfaced-after.jpg",
-    title: "Bathtub Restoration",
+    before: "/dated-bathtub-before-refinishing.jpg",
+    after: "/pristine-white-bathtub-after-refinishing.jpg",
+    title: "Bathtub Refinishing",
     location: "Cary, NC",
   },
 ]

@@ -62,7 +62,7 @@ export function About() {
           <Card className="bg-primary text-primary-foreground border-0">
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Home?</h3>
-              <p className="text-lg mb-6 opacity-90">Contact us today for your free consultation and quote</p>
+              <p className="text-lg mb-6 opacity-90">Contact us today for your free consultation</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="tel:9198785800"
@@ -74,7 +74,7 @@ export function About() {
                   href="#contact"
                   className="inline-flex items-center justify-center rounded-md border-2 border-background text-primary-foreground px-6 py-3 font-semibold hover:bg-background/10 transition-colors"
                 >
-                  Get Free Quote
+                  Free Consultation
                 </a>
               </div>
             </CardContent>

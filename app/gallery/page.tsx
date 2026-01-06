@@ -260,7 +260,7 @@ export default function GalleryPage() {
               Get a free consultation and see how we can bring new life to your cabinets, countertops, or bathtub.
             </p>
             <Button asChild size="lg">
-              <Link href="/#contact">Get Your Free Quote</Link>
+              <Link href="/#contact">Free Consultation</Link>
             </Button>
           </div>
         </div>

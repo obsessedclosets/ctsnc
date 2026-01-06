@@ -26,6 +26,19 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    if (
+      !formData.firstName ||
+      !formData.lastName ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.service ||
+      !formData.timeline
+    ) {
+      setSubmitStatus("error")
+      return
+    }
+
     setIsSubmitting(true)
     setSubmitStatus("idle")
 
@@ -103,7 +116,7 @@ export function Contact() {
     <section id="contact" className="py-16 md:py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Get Your Free Quote Today</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Free Consultation Today</h2>
           <p className="text-lg text-muted-foreground text-balance">
             Fill out the form below or give us a call to schedule your free consultation
           </p>
@@ -186,8 +199,8 @@ export function Contact() {
                       onValueChange={(value) => handleSelectChange("service", value)}
                       required
                     >
-                      <SelectTrigger>
-                        <SelectValue placeholder="Service Needed" />
+                      <SelectTrigger className={!formData.service ? "text-muted-foreground" : ""}>
+                        <SelectValue placeholder="Service Needed *" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="cabinet-refinishing">Cabinet Refinishing</SelectItem>
@@ -202,8 +215,8 @@ export function Contact() {
                       onValueChange={(value) => handleSelectChange("timeline", value)}
                       required
                     >
-                      <SelectTrigger>
-                        <SelectValue placeholder="Project Timeline" />
+                      <SelectTrigger className={!formData.timeline ? "text-muted-foreground" : ""}>
+                        <SelectValue placeholder="Project Timeline *" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="asap">ASAP</SelectItem>
@@ -221,7 +234,6 @@ export function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={5}
-                      required
                     />
                   </div>
                   <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
