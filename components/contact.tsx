@@ -132,7 +132,7 @@ export function Contact() {
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   {submitStatus === "success" && (
-                    <div className="p-4 bg-green-50 border border-green-200 rounded-md text-green-800">
+                    <div className="p-4 bg-green-100 border-2 border-green-500 rounded-md text-green-900 font-semibold">
                       Thank you! Your request has been submitted. We'll contact you within 24 hours.
                     </div>
                   )}
