@@ -285,8 +285,6 @@ export function Contact() {
                     <div className="text-sm text-muted-foreground">
                       Monday - Friday: 8am - 6pm
                       <br />
-                      Saturday: 9am - 4pm
-                      <br />
                       Sunday: Closed
                     </div>
                   </div>
