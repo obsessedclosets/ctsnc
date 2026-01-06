@@ -24,19 +24,19 @@ export function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="#services" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#services" className="text-sm font-medium hover:text-primary transition-colors">
             Services
           </Link>
-          <Link href="#gallery" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/gallery" className="text-sm font-medium hover:text-primary transition-colors">
             Gallery
           </Link>
-          <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#about" className="text-sm font-medium hover:text-primary transition-colors">
             About
           </Link>
-          <Link href="#testimonials" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#testimonials" className="text-sm font-medium hover:text-primary transition-colors">
             Reviews
           </Link>
-          <Link href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link href="/#contact" className="text-sm font-medium hover:text-primary transition-colors">
             Contact
           </Link>
         </nav>
@@ -62,19 +62,19 @@ export function Header() {
       {isMenuOpen && (
         <div className="md:hidden border-t bg-background">
           <nav className="container flex flex-col gap-4 py-4">
-            <Link href="#services" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/#services" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
               Services
             </Link>
-            <Link href="#gallery" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/gallery" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
               Gallery
             </Link>
-            <Link href="#about" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/#about" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
               About
             </Link>
-            <Link href="#testimonials" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/#testimonials" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
               Reviews
             </Link>
-            <Link href="#contact" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/#contact" className="text-sm font-medium" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
             <a href="tel:9198785800" className="flex items-center gap-2 text-sm font-medium">

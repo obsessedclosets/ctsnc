@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { BeforeAfterSlider } from "./before-after-slider"
 
 const projects = [
   {
@@ -33,7 +33,6 @@ const projects = [
 
 export function Gallery() {
   const [activeProject, setActiveProject] = useState(0)
-  const [showBefore, setShowBefore] = useState(false)
 
   return (
     <section id="gallery" className="py-16 md:py-24">
@@ -46,18 +45,12 @@ export function Gallery() {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-6">
-            <img
-              src={showBefore ? projects[activeProject].before : projects[activeProject].after}
-              alt={showBefore ? "Before" : "After"}
-              className="w-full h-full object-cover"
+          <div className="mb-6">
+            <BeforeAfterSlider
+              beforeImage={projects[activeProject].before}
+              afterImage={projects[activeProject].after}
+              alt={projects[activeProject].title}
             />
-            <div className="absolute top-4 left-4 bg-background/90 backdrop-blur px-4 py-2 rounded-lg font-semibold">
-              {showBefore ? "Before" : "After"}
-            </div>
-            <Button onClick={() => setShowBefore(!showBefore)} className="absolute bottom-4 right-4" size="lg">
-              {showBefore ? "View After" : "View Before"}
-            </Button>
           </div>
 
           <div className="text-center mb-6">
@@ -74,7 +67,6 @@ export function Gallery() {
                 }`}
                 onClick={() => {
                   setActiveProject(index)
-                  setShowBefore(false)
                 }}
               >
                 <img

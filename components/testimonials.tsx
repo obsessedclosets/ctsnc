@@ -20,7 +20,7 @@ const testimonials = [
     name: "Jennifer Martinez",
     location: "Chapel Hill, NC",
     rating: 5,
-    text: "Excellent work on our bathroom countertops! The free in-home consultation was helpful, and they completed everything on schedule. Our bathrooms look incredible.",
+    text: "Excellent work on our bathroom countertops! The free consultation was helpful, and they completed everything on schedule. Our bathrooms look incredible.",
     service: "Countertop Resurfacing",
   },
   {

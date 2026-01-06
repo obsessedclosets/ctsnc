@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -6,9 +7,8 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="text-2xl font-bold text-primary">CTS</div>
-              <div className="text-sm text-muted-foreground">North Carolina</div>
+            <div className="mb-4">
+              <Image src="/cts-logo.jpg" alt="CTS North Carolina" width={180} height={72} className="h-auto" />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Transforming homes across the Triangle with expert cabinet refinishing, countertop & bathtub resurfacing,

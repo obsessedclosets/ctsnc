@@ -105,7 +105,7 @@ export function Contact() {
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Get Your Free Quote Today</h2>
           <p className="text-lg text-muted-foreground text-balance">
-            Fill out the form below or give us a call to schedule your free in-home consultation
+            Fill out the form below or give us a call to schedule your free consultation
           </p>
         </div>
 
@@ -283,7 +283,7 @@ export function Contact() {
             </Card>
 
             <Card className="bg-primary text-primary-foreground border-0">
-              <CardContent className="pt-6">
+              <CardContent className="py-6">
                 <div className="text-center">
                   <div className="text-xl font-bold mb-2">Serving the Triangle</div>
                   <div className="text-sm opacity-90">

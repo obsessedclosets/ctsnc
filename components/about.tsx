@@ -20,7 +20,7 @@ const features = [
   {
     icon: Users,
     title: "Customer Focused",
-    description: "Free in-home consultations and personalized service every step of the way",
+    description: "Free consultations and personalized service every step of the way",
   },
 ]
 
@@ -62,7 +62,7 @@ export function About() {
           <Card className="bg-primary text-primary-foreground border-0">
             <CardContent className="p-8 text-center">
               <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Home?</h3>
-              <p className="text-lg mb-6 opacity-90">Contact us today for your free in-home consultation and quote</p>
+              <p className="text-lg mb-6 opacity-90">Contact us today for your free consultation and quote</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="tel:9198785800"
