@@ -14,43 +14,8 @@ const categories = ["All", "Cabinets", "Countertops", "Bathtubs"]
 
 const galleryImages = [
   {
-    src: "/gallery/1-web-or-mls-101-aynor-cir.jpg",
-    alt: "Cabinet Refinishing - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/2-web-or-mls-101-aynor-cir.jpg",
-    alt: "Kitchen Cabinet Transformation - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/3-web-or-mls-101-aynor-cir.jpg",
-    alt: "Cabinet Detail Work - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/4-web-or-mls-101-aynor-cir.jpg",
-    alt: "Refinished Kitchen Cabinets - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/5-web-or-mls-101-aynor-cir.jpg",
-    alt: "Modern Cabinet Finish - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/6-web-or-mls-101-aynor-cir.jpg",
-    alt: "Kitchen Cabinet Renovation - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
     src: "/gallery/7-web-or-mls-101-aynor-cir.jpg",
     alt: "Cabinet Refinishing Project - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/8-web-or-mls-101-aynor-cir.jpg",
-    alt: "Professional Cabinet Refinish - Clayton, NC",
     category: "Cabinets",
   },
   {
@@ -59,98 +24,8 @@ const galleryImages = [
     category: "Cabinets",
   },
   {
-    src: "/gallery/10-web-or-mls-101-aynor-cir.jpg",
-    alt: "Cabinet Transformation - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/11-web-or-mls-101-aynor-cir.jpg",
-    alt: "Refinished Cabinetry - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/12-web-or-mls-101-aynor-cir.jpg",
-    alt: "Kitchen Cabinet Makeover - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/13-web-or-mls-101-aynor-cir.jpg",
-    alt: "Cabinet Refinishing Detail - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/14-web-or-mls-101-aynor-cir.jpg",
-    alt: "Modern Kitchen Cabinets - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/15-web-or-mls-101-aynor-cir.jpg",
-    alt: "Kitchen Cabinet Restoration - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/16-web-or-mls-101-aynor-cir.jpg",
-    alt: "Cabinet Refinish Work - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/17-web-or-mls-101-aynor-cir.jpg",
-    alt: "Kitchen Cabinet Project - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/18-web-or-mls-101-aynor-cir.jpg",
-    alt: "Professional Cabinet Work - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
     src: "/gallery/19-web-or-mls-101-aynor-cir.jpg",
     alt: "Cabinet Refinishing Excellence - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/20-web-or-mls-101-aynor-cir.jpg",
-    alt: "Kitchen Cabinet Upgrade - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/21-web-or-mls-101-aynor-cir.jpg",
-    alt: "Refinished Kitchen - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/22-web-or-mls-101-aynor-cir.jpg",
-    alt: "Cabinet Transformation Project - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/23-web-or-mls-101-aynor-cir.jpg",
-    alt: "Modern Cabinet Refinishing - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/24-web-or-mls-101-aynor-cir.jpg",
-    alt: "Kitchen Cabinet Refinish - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/25-web-or-mls-101-aynor-cir.jpg",
-    alt: "Cabinet Work Detail - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/26-web-or-mls-101-aynor-cir.jpg",
-    alt: "Professional Kitchen Refinish - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/27-web-or-mls-101-aynor-cir.jpg",
-    alt: "Cabinet Refinishing Complete - Clayton, NC",
-    category: "Cabinets",
-  },
-  {
-    src: "/gallery/28-web-or-mls-101-aynor-cir.jpg",
-    alt: "Finished Cabinet Project - Clayton, NC",
     category: "Cabinets",
   },
   {
