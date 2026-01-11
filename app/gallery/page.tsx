@@ -10,7 +10,7 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import Image from "next/image"
 
-const categories = ["All", "Cabinets", "Countertops", "Bathtubs"]
+const categories = ["All", "Cabinets", "Countertops", "Showers"]
 
 const galleryImages = [
   {
@@ -49,9 +49,9 @@ const galleryImages = [
     category: "Countertops",
   },
   {
-    src: "/pristine-white-bathtub-resurfaced-after.jpg",
-    alt: "Bathtub Restoration - Cary",
-    category: "Bathtubs",
+    src: "/shower-after-refinishing.png",
+    alt: "Shower Restoration - Cary",
+    category: "Showers",
   },
 ]
 
@@ -78,7 +78,7 @@ export default function GalleryPage() {
             </Link>
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-balance">Project Gallery</h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl text-balance">
-              Explore our portfolio of cabinet refinishing, countertop resurfacing, and bathtub restoration projects
+              Explore our portfolio of cabinet refinishing, countertop resurfacing, and shower restoration projects
               across the Triangle area
             </p>
           </div>
@@ -132,7 +132,7 @@ export default function GalleryPage() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">Ready to Transform Your Space?</h2>
             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto text-balance">
-              Get a free consultation and see how we can bring new life to your cabinets, countertops, or bathtub.
+              Get a free consultation and see how we can bring new life to your cabinets, countertops, or shower.
             </p>
             <Button asChild size="lg">
               <Link href="/#contact">Free Consultation</Link>

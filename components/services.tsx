@@ -13,9 +13,9 @@ const services = [
   },
   {
     icon: Droplets,
-    title: "Countertop & Bathtub Resurfacing",
+    title: "Countertop & Shower Resurfacing",
     description:
-      "Restore the beauty of your countertops and bathtubs without replacement. Save time and money with our expert resurfacing services.",
+      "Restore the beauty of your countertops and showers without replacement. Save time and money with our expert resurfacing services.",
     features: ["Durable finish", "Multiple color options", "Quick turnaround", "Cost-effective solution"],
   },
 ]

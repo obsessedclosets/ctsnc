@@ -24,9 +24,9 @@ const projects = [
     location: "Chapel Hill, NC",
   },
   {
-    before: "/dated-bathtub-before-refinishing.jpg",
-    after: "/pristine-white-bathtub-after-refinishing.jpg",
-    title: "Bathtub Refinishing",
+    before: "/shower-before-refinishing.png",
+    after: "/shower-after-refinishing.png",
+    title: "Shower Refinishing",
     location: "Cary, NC",
   },
 ]

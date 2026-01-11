@@ -204,7 +204,7 @@ export function Contact() {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="cabinet-refinishing">Cabinet Refinishing</SelectItem>
-                        <SelectItem value="countertop-bathtub-resurfacing">Countertop & Bathtub Resurfacing</SelectItem>
+                        <SelectItem value="countertop-shower-resurfacing">Countertop & Shower Resurfacing</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
