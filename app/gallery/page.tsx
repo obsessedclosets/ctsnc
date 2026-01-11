@@ -44,8 +44,8 @@ const galleryImages = [
     category: "Cabinets",
   },
   {
-    src: "/modern-bathroom-countertop-resurfaced-after.jpg",
-    alt: "Bathroom Countertop Resurfacing - Durham",
+    src: "/countertop-after-resurfacing.png",
+    alt: "Countertop Resurfacing - Blue to Brown Stone Finish",
     category: "Countertops",
   },
   {

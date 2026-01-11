@@ -53,7 +53,7 @@ export function BeforeAfterSlider({ beforeImage, afterImage, alt }: BeforeAfterS
   return (
     <div
       ref={containerRef}
-      className="relative w-full aspect-[4/3] overflow-hidden rounded-lg cursor-ew-resize select-none"
+      className="relative w-full aspect-[16/10] overflow-hidden rounded-lg cursor-ew-resize select-none bg-muted"
       onMouseDown={handleMouseDown}
       onTouchStart={handleMouseDown}
     >
@@ -61,7 +61,7 @@ export function BeforeAfterSlider({ beforeImage, afterImage, alt }: BeforeAfterS
       <img
         src={afterImage || "/placeholder.svg"}
         alt={`${alt} - After`}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-contain"
       />
 
       {/* Before Image (Clipped based on slider position) */}
@@ -69,7 +69,7 @@ export function BeforeAfterSlider({ beforeImage, afterImage, alt }: BeforeAfterS
         <img
           src={beforeImage || "/placeholder.svg"}
           alt={`${alt} - Before`}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-contain"
         />
       </div>
 

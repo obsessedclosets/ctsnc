@@ -12,20 +12,14 @@ const projects = [
     location: "Raleigh, NC",
   },
   {
-    before: "/worn-kitchen-island-before-restoration.jpg",
-    after: "/beautifully-restored-kitchen-island-after.jpg",
-    title: "Kitchen Island Refinishing",
-    location: "Durham, NC",
-  },
-  {
-    before: "/old-countertops-before-resurfacing.jpg",
-    after: "/granite-countertops-after-resurfacing.jpg",
+    before: "/images/counter-20-20before.png",
+    after: "/images/counter-20-20after.png",
     title: "Countertop Resurfacing",
     location: "Chapel Hill, NC",
   },
   {
-    before: "/shower-before-refinishing.png",
-    after: "/shower-after-refinishing.png",
+    before: "/images/shower-20-20before.png",
+    after: "/images/shower-20-20after.png",
     title: "Shower Refinishing",
     location: "Cary, NC",
   },
@@ -58,7 +52,7 @@ export function Gallery() {
             <p className="text-muted-foreground">{projects[activeProject].location}</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
             {projects.map((project, index) => (
               <Card
                 key={index}
