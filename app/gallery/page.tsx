@@ -29,18 +29,18 @@ const galleryImages = [
     category: "Cabinets",
   },
   {
-    src: "/gallery/project-1.jpg",
-    alt: "Kitchen Cabinet Refinishing Project",
+    src: "/gallery/wake-forest-cabinets-1.jpeg",
+    alt: "Cabinet Refinishing Project - Wake Forest, NC",
     category: "Cabinets",
   },
   {
-    src: "/bright-white-refinished-kitchen-cabinets-after.jpg",
-    alt: "White Kitchen Cabinet Transformation - Raleigh",
+    src: "/gallery/wake-forest-cabinets-2.jpeg",
+    alt: "Cabinet Refinishing Project - Wake Forest, NC",
     category: "Cabinets",
   },
   {
-    src: "/modern-gray-cabinets-refinished-after.jpg",
-    alt: "Modern Gray Cabinet Refinish - Chapel Hill",
+    src: "/gallery/wake-forest-cabinets-3.jpeg",
+    alt: "Cabinet Refinishing Project - Wake Forest, NC",
     category: "Cabinets",
   },
   {
@@ -49,9 +49,164 @@ const galleryImages = [
     category: "Countertops",
   },
   {
+    src: "/gallery/white-to-brown-counter.jpg",
+    alt: "Countertop Resurfacing Before & After - White to Brown",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/tile-kitchen-counter-metallic.jpg",
+    alt: "Kitchen Tile Counter Resurfacing - Metallic Finish",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/two-tone-bathroom-vanity.jpg",
+    alt: "Bathroom Vanity Countertop Resurfacing",
+    category: "Countertops",
+  },
+  {
     src: "/shower-after-refinishing.png",
     alt: "Shower Restoration - Cary",
     category: "Showers",
+  },
+  {
+    src: "/gallery/turquoise-tub-shower.jpg",
+    alt: "Tub & Shower Refinishing Before & After - Turquoise to White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/yellow-tub-zoomed.jpg",
+    alt: "Bathtub Refinishing Before & After - Yellow to White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/two-tone-turquoise-tub-shower.jpg",
+    alt: "Tub & Shower Complete Transformation - Turquoise to White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/yellow-garden-tub.jpg",
+    alt: "Garden Tub Refinishing Before & After - Yellow to White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/shower-cracked-zoomed2.jpg",
+    alt: "Wall Crack Repair Before & After",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/shower-cracked-zoomed1.jpg",
+    alt: "Shower Wall Crack Repair Before & After",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/shower-pan-tile-enclosure.jpg",
+    alt: "Shower Pan & Tile Enclosure Restoration Before & After",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/shower-glass-wall.jpg",
+    alt: "Shower Refinishing Before & After - Peach to White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/repairs-around-faucet.jpg",
+    alt: "Tub Faucet Area Repair Before & After",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/shower-new-door.jpg",
+    alt: "Tub Surround Refinishing Before & After - Peach to White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/red-kitchen-far-shot.jpg",
+    alt: "Kitchen Countertop Resurfacing Before & After - Red to Gray",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/tile-bathroom-counter.jpg",
+    alt: "Bathroom Tile Counter Resurfacing Before & After",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/orange-kitchen-counter.jpg",
+    alt: "Kitchen Countertop Resurfacing Before & After - Orange to Stone",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/orange-bathroom-counter.jpg",
+    alt: "Bathroom Vanity Resurfacing Before & After - Orange to Cream",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/pink-kitchen-counter.jpg",
+    alt: "Kitchen Countertop Resurfacing Before & After - Pink to Stone",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/red-kitchen-closeup.jpg",
+    alt: "Kitchen Countertop Close-up Before & After - Red to Brown Stone",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/pink-sink-tile-surround.jpg",
+    alt: "Bathroom Sink Resurfacing Before & After - Pink to White",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/garden-tub.jpg",
+    alt: "Garden Tub Refinishing Before & After - Peach Marble to White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/garden-tub-turquoise.jpg",
+    alt: "Garden Tub Refinishing Before & After - Turquoise Marble to Cream",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/pink-tub.jpg",
+    alt: "Bathtub & Tile Refinishing Before & After - Pink to White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/dirty-white-tub-closeup.jpg",
+    alt: "Bathtub Refinishing Before & After - Stained to Pristine White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/flower-tile-shower.jpg",
+    alt: "Shower Tile Resurfacing Before & After - Floral to Solid Beige",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/fiberglass-shower-cracked.jpg",
+    alt: "Fiberglass Shower Refinishing Before & After - Stained to Clean White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/dirty-white-tub.jpg",
+    alt: "Tub & Surround Refinishing Before & After - Heavy Stains to Bright White",
+    category: "Showers",
+  },
+  {
+    src: "/gallery/damaged-kitchen.jpg",
+    alt: "Kitchen Countertop Repair Before & After - Burn Damage to Stone Finish",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/damaged-kitchen-zoomed.jpg",
+    alt: "Countertop Burn Repair Close-up Before & After",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/butcher-block-repair.jpg",
+    alt: "Butcher Block Countertop Resurfacing Before & After - Wood to Dark Granite",
+    category: "Countertops",
+  },
+  {
+    src: "/gallery/dirty-kitchen.jpg",
+    alt: "Kitchen Countertop Resurfacing Before & After - Stained to Stone Speckle",
+    category: "Countertops",
   },
 ]
 

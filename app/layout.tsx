@@ -8,9 +8,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CTS North Carolina | Cabinet Refinishing, Countertop & Bathtub Resurfacing",
+  title: "CTS North Carolina | Cabinet Refinishing & Countertop Resurfacing",
   description:
-    "Transform your home with CTS North Carolina. Expert cabinet refinishing, countertop & bathtub resurfacing, and carpet cleaning services in Raleigh, Durham, Chapel Hill, and Cary.",
+    "Transform your home with CTS North Carolina. Expert cabinet refinishing and countertop resurfacing services in Raleigh, Durham, Chapel Hill, and Cary.",
   generator: "v0.app",
   icons: {
     icon: [

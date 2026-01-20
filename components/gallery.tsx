@@ -6,8 +6,8 @@ import { BeforeAfterSlider } from "./before-after-slider"
 
 const projects = [
   {
-    before: "/outdated-kitchen-cabinets-before-refinishing.jpg",
-    after: "/modern-refinished-kitchen-cabinets-after.jpg",
+    before: "/kitchen-cabinets-before.jpeg",
+    after: "/kitchen-cabinets-after.jpeg",
     title: "Kitchen Cabinet Transformation",
     location: "Raleigh, NC",
   },
