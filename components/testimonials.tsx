@@ -3,28 +3,28 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Johnson Family",
     location: "Raleigh, NC",
     rating: 5,
     text: "CTS transformed our outdated kitchen cabinets into something absolutely stunning! The team was professional, on time, and the quality exceeded our expectations. Highly recommend!",
     service: "Cabinet Refinishing",
   },
   {
-    name: "Michael Thompson",
+    name: "Thompson Family",
     location: "Durham, NC",
     rating: 5,
     text: "We were amazed at how they brought our old bathtub back to life. It looks brand new! The process was quick and the price was very reasonable compared to replacement.",
     service: "Bathtub Resurfacing",
   },
   {
-    name: "Jennifer Martinez",
+    name: "Martinez Family",
     location: "Chapel Hill, NC",
     rating: 5,
     text: "Excellent work on our bathroom countertops! The free consultation was helpful, and they completed everything on schedule. Our bathrooms look incredible.",
     service: "Countertop Resurfacing",
   },
   {
-    name: "David Chen",
+    name: "Chen Family",
     location: "Cary, NC",
     rating: 5,
     text: "Professional from start to finish. They refinished our kitchen cabinets and installed a beautiful backsplash. The attention to detail was impressive. Worth every penny!",
