@@ -156,9 +156,9 @@ export default function ContactPage() {
 
               <div className="grid lg:grid-cols-3 gap-8">
                 <div className="lg:col-span-2">
-                  <Card className="bg-background/95 backdrop-blur">
-                    <CardContent className="pt-6">
-                      <form onSubmit={handleSubmit} className="space-y-4">
+                  <Card className="bg-background/95 backdrop-blur h-full">
+                    <CardContent className="pt-6 h-full flex flex-col">
+                      <form onSubmit={handleSubmit} className="space-y-4 flex-1 flex flex-col">
                         {submitStatus === "success" && (
                           <div className="p-4 bg-green-100 border-2 border-green-500 rounded-md text-green-900 font-semibold">
                             Thank you! Your request has been submitted. We'll contact you within 24 hours.
@@ -254,13 +254,14 @@ export default function ContactPage() {
                             </SelectContent>
                           </Select>
                         </div>
-                        <div>
+                        <div className="flex-1">
                           <Textarea
                             name="message"
                             placeholder="Tell us about your project..."
                             value={formData.message}
                             onChange={handleChange}
                             rows={4}
+                            className="h-full min-h-[100px]"
                           />
                         </div>
                         <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
@@ -271,9 +272,9 @@ export default function ContactPage() {
                   </Card>
                 </div>
 
-                <div className="space-y-6">
-                  <Card className="bg-background/95 backdrop-blur">
-                    <CardContent className="pt-6 space-y-4">
+                <div>
+                  <Card className="bg-background/95 backdrop-blur h-full">
+                    <CardContent className="pt-6 space-y-6 h-full flex flex-col justify-center">
                       <div className="flex gap-3">
                         <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
                         <div>
@@ -318,18 +319,20 @@ export default function ContactPage() {
                       </div>
                     </CardContent>
                   </Card>
-
-                  <Card className="bg-primary text-primary-foreground border-0">
-                    <CardContent className="py-6">
-                      <div className="text-center">
-                        <div className="text-xl font-bold mb-2">Serving the Triangle</div>
-                        <div className="text-sm opacity-90">
-                          Raleigh, Durham, Chapel Hill, Cary, Wake Forest and surrounding areas
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
                 </div>
+              </div>
+
+              <div className="mt-8">
+                <Card className="bg-primary text-primary-foreground border-0">
+                  <CardContent className="py-6">
+                    <div className="text-center">
+                      <div className="text-xl font-bold mb-2">Serving the Triangle</div>
+                      <div className="text-sm opacity-90">
+                        Raleigh, Durham, Chapel Hill, Cary, Wake Forest and surrounding areas
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
