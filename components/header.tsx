@@ -29,7 +29,7 @@ export function Header() {
           <Link href="/#testimonials" className="text-base font-medium hover:text-primary transition-colors">
             Reviews
           </Link>
-          <Link href="/#contact" className="text-base font-medium hover:text-primary transition-colors">
+          <Link href="/contact" className="text-base font-medium hover:text-primary transition-colors">
             Contact
           </Link>
         </nav>
@@ -43,7 +43,7 @@ export function Header() {
             (919) 878-5800
           </a>
           <Button asChild size="lg">
-            <Link href="#contact">Free Consultation</Link>
+            <Link href="/contact">Free Consultation</Link>
           </Button>
         </div>
 
@@ -67,7 +67,7 @@ export function Header() {
             <Link href="/#testimonials" className="text-base font-medium" onClick={() => setIsMenuOpen(false)}>
               Reviews
             </Link>
-            <Link href="/#contact" className="text-base font-medium" onClick={() => setIsMenuOpen(false)}>
+            <Link href="/contact" className="text-base font-medium" onClick={() => setIsMenuOpen(false)}>
               Contact
             </Link>
             <a href="tel:9198785800" className="flex items-center gap-2 text-base font-medium">
@@ -75,7 +75,7 @@ export function Header() {
               (919) 878-5800
             </a>
             <Button asChild className="w-full" size="lg">
-              <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
+              <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                 Free Consultation
               </Link>
             </Button>
