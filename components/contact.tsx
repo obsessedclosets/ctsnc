@@ -130,7 +130,7 @@ export function Contact() {
                 <CardDescription>We'll get back to you within 24 hours to schedule your appointment</CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4" suppressHydrationWarning>
                   {submitStatus === "success" && (
                     <div className="p-4 bg-green-100 border-2 border-green-500 rounded-md text-green-900 font-semibold">
                       Thank you! Your request has been submitted. We'll contact you within 24 hours.
@@ -142,27 +142,31 @@ export function Contact() {
                     </div>
                   )}
                   <div className="grid md:grid-cols-2 gap-4">
-                    <div>
+                    <div suppressHydrationWarning>
                       <Input
                         name="firstName"
                         placeholder="First Name"
                         value={formData.firstName}
                         onChange={handleChange}
                         required
+                        data-lpignore="true"
+                        data-form-type="other"
                       />
                     </div>
-                    <div>
+                    <div suppressHydrationWarning>
                       <Input
                         name="lastName"
                         placeholder="Last Name"
                         value={formData.lastName}
                         onChange={handleChange}
                         required
+                        data-lpignore="true"
+                        data-form-type="other"
                       />
                     </div>
                   </div>
                   <div className="grid md:grid-cols-2 gap-4">
-                    <div>
+                    <div suppressHydrationWarning>
                       <Input
                         name="email"
                         type="email"
@@ -170,9 +174,11 @@ export function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        data-lpignore="true"
+                        data-form-type="other"
                       />
                     </div>
-                    <div>
+                    <div suppressHydrationWarning>
                       <Input
                         name="phone"
                         type="tel"
@@ -180,16 +186,20 @@ export function Contact() {
                         value={formData.phone}
                         onChange={handleChange}
                         required
+                        data-lpignore="true"
+                        data-form-type="other"
                       />
                     </div>
                   </div>
-                  <div>
+                  <div suppressHydrationWarning>
                     <Input
                       name="address"
                       placeholder="Address"
                       value={formData.address}
                       onChange={handleChange}
                       required
+                      data-lpignore="true"
+                      data-form-type="other"
                     />
                   </div>
                   <div>
