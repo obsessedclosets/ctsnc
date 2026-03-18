@@ -129,7 +129,7 @@ export function Contact() {
                 <CardTitle>Request a Free Consultation</CardTitle>
                 <CardDescription>We'll get back to you within 24 hours to schedule your appointment</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent suppressHydrationWarning>
                 <form onSubmit={handleSubmit} className="space-y-4" suppressHydrationWarning>
                   {submitStatus === "success" && (
                     <div className="p-4 bg-green-100 border-2 border-green-500 rounded-md text-green-900 font-semibold">
@@ -141,7 +141,7 @@ export function Contact() {
                       There was an error submitting your request. Please call us at (919) 878-5800.
                     </div>
                   )}
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-2 gap-4" suppressHydrationWarning>
                     <div suppressHydrationWarning>
                       <Input
                         name="firstName"
@@ -151,6 +151,7 @@ export function Contact() {
                         required
                         data-lpignore="true"
                         data-form-type="other"
+                        autoComplete="off"
                       />
                     </div>
                     <div suppressHydrationWarning>
@@ -162,10 +163,11 @@ export function Contact() {
                         required
                         data-lpignore="true"
                         data-form-type="other"
+                        autoComplete="off"
                       />
                     </div>
                   </div>
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-2 gap-4" suppressHydrationWarning>
                     <div suppressHydrationWarning>
                       <Input
                         name="email"
@@ -176,6 +178,7 @@ export function Contact() {
                         required
                         data-lpignore="true"
                         data-form-type="other"
+                        autoComplete="off"
                       />
                     </div>
                     <div suppressHydrationWarning>
@@ -188,6 +191,7 @@ export function Contact() {
                         required
                         data-lpignore="true"
                         data-form-type="other"
+                        autoComplete="off"
                       />
                     </div>
                   </div>
@@ -200,6 +204,7 @@ export function Contact() {
                       required
                       data-lpignore="true"
                       data-form-type="other"
+                      autoComplete="off"
                     />
                   </div>
                   <div>
