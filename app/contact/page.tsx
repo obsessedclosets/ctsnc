@@ -11,6 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { MapPin, Phone, Mail, Clock, Shield, Award, Users } from "lucide-react"
 import Link from "next/link"
+import { submitLead } from "@/lib/submit-lead"
 
 const features = [
   {
@@ -67,19 +68,10 @@ export default function ContactPage() {
     setIsSubmitting(true)
     setSubmitStatus("idle")
 
-    const webhookUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_WEBHOOK_URL
-
-    if (!webhookUrl) {
-      console.error("Google Sheets webhook URL not configured")
-      setSubmitStatus("error")
-      setIsSubmitting(false)
-      return
-    }
-
     try {
       const fullName = `${formData.firstName} ${formData.lastName}`.trim()
 
-      const payload = {
+      await submitLead({
         name: fullName,
         email: formData.email,
         phone: formData.phone,
@@ -87,15 +79,6 @@ export default function ContactPage() {
         address: formData.address,
         timeline: formData.timeline,
         message: formData.message,
-      }
-
-      await fetch(webhookUrl, {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
       })
 
       setSubmitStatus("success")

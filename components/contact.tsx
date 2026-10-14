@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { submitLead } from "@/lib/submit-lead"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -42,22 +43,10 @@ export function Contact() {
     setIsSubmitting(true)
     setSubmitStatus("idle")
 
-    const webhookUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_WEBHOOK_URL
-
-    console.log("[v0] Webhook URL:", webhookUrl ? "Found" : "Missing")
-
-    if (!webhookUrl) {
-      console.error("[v0] Google Sheets webhook URL not configured")
-      setSubmitStatus("error")
-      setIsSubmitting(false)
-      return
-    }
-
     try {
-      // Combine first and last name for the sheet
       const fullName = `${formData.firstName} ${formData.lastName}`.trim()
 
-      const payload = {
+      await submitLead({
         name: fullName,
         email: formData.email,
         phone: formData.phone,
@@ -65,20 +54,8 @@ export function Contact() {
         address: formData.address,
         timeline: formData.timeline,
         message: formData.message,
-      }
-
-      console.log("[v0] Submitting to Google Sheets:", payload)
-
-      const response = await fetch(webhookUrl, {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
       })
 
-      console.log("[v0] Form submission completed")
       setSubmitStatus("success")
       setFormData({
         firstName: "",
@@ -91,7 +68,7 @@ export function Contact() {
         message: "",
       })
     } catch (error) {
-      console.error("[v0] Form submission error:", error)
+      console.error("Form submission error:", error)
       setSubmitStatus("error")
     } finally {
       setIsSubmitting(false)
