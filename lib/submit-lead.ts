@@ -1,4 +1,5 @@
-export const LEAD_NOTIFICATION_EMAIL = "info@ctsnorthcarolina.com"
+export const LEAD_NOTIFICATION_EMAIL = "patrick@ctsnorthcarolina.com"
+export const LEAD_CC_EMAIL = "info@ctsnorthcarolina.com"
 
 export type LeadPayload = {
   name: string
@@ -20,6 +21,7 @@ async function sendEmailNotification(payload: LeadPayload) {
     body: JSON.stringify({
       _subject: `New website inquiry from ${payload.name}`,
       _replyto: payload.email,
+      _cc: LEAD_CC_EMAIL,
       _template: "table",
       _captcha: "false",
       Name: payload.name,
